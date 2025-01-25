@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>boton de html</title>
 </head>
 <body>
     <h1>Hola mundo</h1>
-    <button onclick='saludar(" mundo,"," ¿todo bien?")'>Click Here</button>
+    <p>oprime el primer boton para saludar y el segundo para despedirte</p>
+    <hr>
+    <button onclick='saludar(" mundo,"," ¿todo bien?")'>boton 1</button>
 <script>
     function saludar(nombre, apellido){
         console.log("Hola" + nombre + "" + apellido);
@@ -15,6 +17,19 @@
     }
     // saludar(" mundo ,"," ¿todo bien?")
 </script>
+</body>
+<br>
+<hr>
+<body>
+    <button onclick='despedirte(" mundo,"," ¡cuidate!")'>boton 2</button>
+<script>
+    function despedirte(nombre, apellido){
+        console.log("Chao" + nombre + "" + apellido);
+        alert("Chao" + nombre + "" + apellido)
+    }
+    // despedirte(" mundo ,"," ¡cuidate!")
+</script>
+<hr>
 
 </body>
 </html>
